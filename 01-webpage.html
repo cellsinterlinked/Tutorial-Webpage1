@@ -8,7 +8,8 @@
     <title>Tutorial Webpage</title>
     <link rel="stylesheet" ref="text/css" href="01-webpage.css">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|ZCOOL+QingKe+HuangYou" rel="stylesheet">
 </head>
 
 <body>
@@ -34,12 +35,7 @@
 
     <section id="navbar">
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About</a></li>
-            </ul>
+            
         </nav>
     </section>
 
@@ -53,21 +49,77 @@
     </section>
 
     <!-- BODY -->
-
+<div>
     <section id="body">
+        <div id= "conditionals"> 
+            <h1>Conditionals</h1>
+                <div id="context">
+                    <p> Conditional statements are useful while coding different decisions which lead to different outcomes. “If” statements run a condition only if it is true. An “else if” statement runs an alternative condition if the previous is false. An “else” statement runs yet another condition if the previous were all false. </p>
+                </div>
+                <div id="conpic">
+                    <p>if(age <= 17){</p>
+                        <p>console.log('Sorry, youre too young to do anything');</p>
+                    <p>} else if(age >= 18 && age < 21){</p>
+                        <p>console.log('Yay! You can vote!');</p>
+                    <p>} else if(age >= 21 && age <25){</p>
+                        <p>console.log('Yay! You can drink');</p>
+                    <p>} else(age >= 25)</p>
+                        <p>console.log('Yay! You can rent a car!');</p>
+                </div>
+        </div>
+
+        <div id= "objects"> 
+            <h1>Objects</h1>
+                <div id="objtext">
+                    <p>An object is a variable which can hold many different properties within them. These may also hold methods which are actions that can be done to the  object. These actions are stored functions. </p>
+                </div>
+                <div id="objpic">
+                    <p>let scott = {</p>
+                            <p>firstName: Scott,</p>
+                            <p>lastName: Billings,</p>
+                            <p>eyeColor: Brown,</p>
+                            <p>age:30,</p>
+                            <p>};</p>
+                </div>
+        </div>
+
+        <div id= "arrays"> 
+            <h1>Arrays</h1>
+                <div id="arraytext">
+                    <p>An array is a special kind of variable which is a list of ordered items. These Items can hold more than one value and are accessible by their index number.</p>
+                </div>
+                <div id="arraypic">
+                    <p>let scott = ["scott", "Billings", "Brown", 30,];</p>
+                </div>
+        </div>
 
     </section>
-
+</div>
     <!-- SIDEBAR -->
 
-    <section id="sidebar">
-
+    <section class="sidebar animated bounceInLeft">
+        <nav>
+            <h4>Navigation Menu</h4>
+                <p><a href="#conditionals">Conditionals</a></p>
+                <p><a href="#objects">Objects</a></p>
+                <p><a href="#arrays">Arrays</a></p>
+                <p><a href="#footer">Extra Help</a></p>
+            
+        </nav>
     </section>
 
     <!-- FOOTER -->
 
     <section id="footer">
-
+            <nav class= "foottext">
+                <h1>Still Lost? Here Are Some Additional Resources!</h1>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_if_else.asp">Conditionals</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Arrays</a></li>
+                        <li><a href="https://javascript.info/object">Objects</a></li>
+                
+                    </ul>
+                </nav>
     </section>
 
 </body>
